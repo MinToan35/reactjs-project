@@ -457,3 +457,102 @@ li {
    }
    
 }
+
+/*--------------------------------------Review-------------------------------------*/
+.review-body{
+  padding: 80px 5vw 5vw;
+  display: flex;
+  justify-content: center;
+  
+  .section-center{
+    max-width: 600px;
+    margin-top: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+      h1{
+        font-size: 40px;
+        color: #102A42;
+        margin-bottom: 20px;
+      }
+      .underline{
+        height: 4px;
+        width: 100px;
+        background-color: #2686e0;
+      }
+    
+    .info-container{
+      background-color: #fff;
+      margin: 5vw 0;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      line-height: 1.5;
+      border-radius: 8px;
+      box-shadow: 0 0 20px 0 rgb(45, 44, 44);
+      img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      h3{
+        font-size: 18px;
+      }
+      .job{
+        color: #49baf2;
+      }
+      .text{
+        margin: 20px 0;
+        color: #617db3;
+      }
+      .btn-control{
+        button{
+          background-color: transparent;
+          border: none;
+          font-size: 20px;
+          margin: 0 20px 10px;
+          color: #49a6e9;
+        }
+      }
+      .btn-random {
+        padding: 10px;
+        font-size: 15px;
+        outline: none;
+        border: 2px solid black;
+        background-color: white;
+        color: white;
+        position: relative;
+        letter-spacing: 1px;
+        margin: 20px;
+       }
+       
+       .btn-random::before {
+        content: 'Button';
+        /*Button's value/text-content */
+        position: absolute;
+        top: -14%;
+        left: 7%;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.15s ease-in-out;
+        font-weight: bold;
+       }
+       
+       .btn-random:hover::before {
+        top: 0;
+        left: 0;
+       }
+    }
+  }
+}

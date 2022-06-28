@@ -9,5 +9,10 @@ const links = [
     url: "/tours",
     text: "tours",
   },
+  {
+    id: 3,
+    url: "/review",
+    text: "review",
+  },
 ];
 export default links;
