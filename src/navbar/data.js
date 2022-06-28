@@ -14,5 +14,10 @@ const links = [
     url: "/review",
     text: "review",
   },
+  {
+    id: 4,
+    url: "/question",
+    text: "question",
+  },
 ];
 export default links;
