@@ -36,7 +36,8 @@ const character = [
   },
   {
     id: 56,
-    image: "https://lolfilter.com/files/thumbnails/308454416545100.png",
+    image:
+      "https://i.pinimg.com/originals/c4/3c/98/c43c98518d5f6ca381cbebd19b405f4b.png",
     name: "Chopper",
     age: 17,
   },

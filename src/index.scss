@@ -1,8 +1,9 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -16,44 +17,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 /*------------------------------------------global-----------------------------------------------*/
-li{
+li {
   list-style: none;
 }
 
 /*------------------------------------------navbar-----------------------------------------------*/
-.nav-bar{
+.nav-bar {
   background-color: #fff;
   position: absolute;
-  top:0;
+  top: 0;
   width: 100%;
   box-shadow: 0 0 5px rgb(29, 28, 28);
-  .nav-center{
+
+  .nav-center {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    .nav-header{
+
+    .nav-header {
       margin: 20px;
-      .logo{
+
+      .logo {
         height: 40px;
-        
+
       }
-      .toggle-btn{
+
+      .toggle-btn {
         display: none;
-        
+
       }
-      
+
     }
-    .list-container{
+
+    .list-container {
       display: flex;
       align-items: center;
-      .lists-item{
+
+      .lists-item {
         display: flex;
         margin: 0;
         padding: 0;
-        .list-item{
-          .list-link{
+
+        .list-item {
+          .list-link {
             margin: 20px;
             text-decoration: none;
             text-transform: capitalize;
@@ -61,67 +69,81 @@ li{
             letter-spacing: 1.5px;
 
           }
-          .list-link:hover{
+
+          .list-link:hover {
             color: #2686e0;
-            
+
           }
         }
-        
+
       }
     }
   }
 }
+
 @media screen and (max-width:880px) {
-  .nav-bar{
+  .nav-bar {
     background-color: #fff;
-    .nav-center{
+
+    .nav-center {
       flex-direction: column;
       overflow: hidden;
-      .nav-header{
+
+      .nav-header {
         margin: 0;
         padding: 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        .toggle-btn{
+
+        .toggle-btn {
           background-color: transparent;
           border: none;
           display: flex;
-          .toggle{
-            
+
+          .toggle {
+
             transition: 0.3s;
             font-size: 30px;
           }
-          .toggle:hover{
+
+          .toggle:hover {
             transform: rotate(90deg);
           }
         }
-        
+
       }
-      .list-container{
+
+      .list-container {
         width: 100%;
         height: 0;
         overflow: hidden;
         transition: 0.3s;
-        .lists-item{
+
+        .lists-item {
           flex-direction: column;
           width: 100%;
-          .list-item{
+
+          .list-item {
             padding: 10px 20px;
             width: 100%;
             transition: 0.3s;
-            .list-link{
+
+            .list-link {
               margin: 0;
             }
-            .list-link:hover{
+
+            .list-link:hover {
               color: rgb(65, 168, 236);
             }
           }
-          .list-item:hover{
+
+          .list-item:hover {
             background-color: #b9d4ed;
             padding-left: 30px;
-            .list-link{
+
+            .list-link {
               color: rgb(65, 168, 236);
 
             }
@@ -133,43 +155,50 @@ li{
 }
 
 /*----------------------------------Birthday-------------------------------------*/
-.birthday-body{
+.birthday-body {
   background-color: #f5a9f2;
   min-height: calc(100vh - 84px);
   padding: 5%;
   margin-top: 80px;
-  .section-center{
-    
+
+  .section-center {
+
     max-width: 500px;
     background-color: #fff;
     margin: 0 auto;
-    padding: 10%;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 30px 0 rgb(19, 18, 18);
-    h1{
+
+    h1 {
       font-size: 40px;
       text-transform: capitalize;
     }
-    .character{
+
+    .character {
       margin: 30px 0;
       display: flex;
       align-items: center;
-      .image-character{
+
+      .image-character {
         width: 75px;
         height: 75px;
         border-radius: 50%;
         object-fit: cover;
         border: 1px solid black;
       }
-      .info{
+
+      .info {
         margin: 0 30px;
-        h3{
+
+        h3 {
           text-transform: capitalize;
           font-size: 22px;
           padding: 6px 0;
         }
       }
     }
+
     .btn-clear {
       --border-radius: 15px;
       --border-width: 4px;
@@ -187,9 +216,9 @@ li{
       display: block;
       margin: 0 auto;
       margin-top: 20px;
-     }
-     
-     .btn-clear::after {
+    }
+
+    .btn-clear::after {
       --m-i: linear-gradient(#000, #000);
       --m-o: content-box, padding-box;
       content: "";
@@ -200,15 +229,13 @@ li{
       height: 100%;
       padding: var(--border-width);
       border-radius: var(--border-radius);
-      background-image: conic-gradient(
-         #488cfb,
-         #29dbbc,
-         #ddf505,
-         #ff9f0e,
-         #e440bb,
-         #655adc,
-         #488cfb
-       );
+      background-image: conic-gradient(#488cfb,
+          #29dbbc,
+          #ddf505,
+          #ff9f0e,
+          #e440bb,
+          #655adc,
+          #488cfb);
       -webkit-mask-image: var(--m-i), var(--m-i);
       mask-image: var(--m-i), var(--m-i);
       -webkit-mask-origin: var(--m-o);
@@ -219,26 +246,214 @@ li{
       filter: hue-rotate(0);
       animation: rotate-hue linear 500ms infinite;
       animation-play-state: paused;
-     }
-     
-     .btn-clear:hover::after {
+    }
+
+    .btn-clear:hover::after {
       animation-play-state: running;
-     }
-     
-     @keyframes rotate-hue {
+    }
+
+    @keyframes rotate-hue {
       to {
-       filter: hue-rotate(1turn);
+        filter: hue-rotate(1turn);
       }
-     }
-     
-     .btn-clear,
-     .btn-clear::after {
+    }
+
+    .btn-clear,
+    .btn-clear::after {
       box-sizing: border-box;
-     }
-     
-     .btn-clear:active {
+    }
+
+    .btn-clear:active {
       --border-width: 5px;
-     }
+    }
   }
 }
 
+@media screen and (max-width:880px) {
+  .birthday-body {
+    .section-center {
+      padding: 5%;
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+/*-----------------------------------------Tours-------------------------------------------------------*/
+.tour-body {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2{
+    margin: 40px auto;
+  }
+  .tour-container {
+    max-width: 600px;
+    margin: 40px 5%;
+
+    .header-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+      
+      h1 {
+        text-transform: capitalize;
+        font-size: 40px;
+        color: #102A42;
+        width: 600px;
+        text-align: center;
+      }
+
+      .underline {
+        height: 4px;
+        width: 100px;
+        background-color: #199be7;
+      }
+    }
+
+    .list-tour {
+      background-color: #fff;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      overflow: hidden;
+
+      .tour {
+        img {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+        }
+
+        .title-info {
+          padding: 20px 30px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          span {
+            background-color: #ebf7ff;
+            color: #49a6e9;
+            padding: 5px 10px;
+            border: 4px;
+          }
+        }
+
+        .text-info {
+          padding: 20px 30px 0;
+          letter-spacing: 0.8px;
+          line-height: 2;
+
+          .readMore {
+            background-color: transparent;
+            border: none;
+            font-size: 20px;
+            color: #49a6e9;
+            margin-left: 4px;
+          }
+        }
+      }
+
+      .btn-delete {
+        --color: #49a6e9;
+        --color2: rgb(10, 25, 30);
+        padding: 0.8em 1.75em;
+        background-color: transparent;
+        border-radius: 6px;
+        border: .3px solid var(--color);
+        transition: .5s;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        z-index: 1;
+        font-weight: 300;
+        font-size: 17px;
+        font-family: 'Roboto', 'Segoe UI', sans-serif;
+        text-transform: uppercase;
+        color: var(--color);
+        display: block;
+        margin: 20px auto 40px;
+      }
+
+      .btn-delete::after,
+      .btn-delete::before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        transform: skew(90deg) translate(-50%, -50%);
+        position: absolute;
+        inset: 50%;
+        left: 25%;
+        z-index: -1;
+        transition: .5s ease-out;
+        background-color: var(--color);
+      }
+
+      .btn-delete::before {
+        top: -50%;
+        left: -25%;
+        transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+      }
+
+      .btn-delete:hover::before {
+        transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+      }
+
+      .btn-delete:hover::after {
+        transform: skew(45deg) translate(-50%, -50%);
+      }
+
+      .btn-delete:hover {
+        color: var(--color2);
+      }
+
+      .btn-delete:active {
+        filter: brightness(.7);
+        transform: scale(.98);
+      }
+    }
+  }
+  .refresh-btn {
+    padding: 0.8em 1.8em;
+    border: 2px solid #49a6e9;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #49a6e9;
+    display: block;
+    margin: 20px auto;
+   }
+   
+   .refresh-btn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: #49a6e9;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .refresh-btn:hover::before {
+    width: 105%;
+   }
+   
+   .refresh-btn:hover {
+    color: #111;
+   }
+   
+}
