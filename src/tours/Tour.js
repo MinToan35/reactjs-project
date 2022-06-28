@@ -9,7 +9,7 @@ const Tour = ({ tour }) => {
       <img src={image} alt={name} />
       <div className="title-info">
         <h3>{name}</h3>
-        <span>{price}</span>
+        <span>${price}</span>
       </div>
       <p className="text-info">
         {readMore ? `${info}` : `${info.substring(0, 200)}...`}

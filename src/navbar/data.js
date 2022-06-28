@@ -19,5 +19,10 @@ const links = [
     url: "/question",
     text: "question",
   },
+  {
+    id: 5,
+    url: "/menu",
+    text: "menu",
+  },
 ];
 export default links;
