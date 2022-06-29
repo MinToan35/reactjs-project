@@ -6,7 +6,7 @@ const links = [
   },
   {
     id: 2,
-    url: "/tours",
+    url: "/",
     text: "tours",
   },
   {
@@ -23,6 +23,11 @@ const links = [
     id: 5,
     url: "/menu",
     text: "menu",
+  },
+  {
+    id: 6,
+    url: "/tabs",
+    text: "Tabs",
   },
 ];
 export default links;

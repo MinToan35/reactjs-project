@@ -5,6 +5,7 @@ import Tours from "./tours/App";
 import Review from "./review/App";
 import Question from "./question/App";
 import Menu from "./menu/App";
+import Tabs from "./tabs/App";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/review" element={<Review />} />
         <Route path="/question" element={<Question />} />
         <Route path="/menu" element={<Menu />} />
+        <Route path="/tabs" element={<Tabs />} />
       </Routes>
     </>
   );
