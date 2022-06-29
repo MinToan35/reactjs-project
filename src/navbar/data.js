@@ -34,5 +34,10 @@ const links = [
     url: "/lorem",
     text: "lorem",
   },
+  {
+    id: 8,
+    url: "/crud",
+    text: "CRUD",
+  },
 ];
 export default links;

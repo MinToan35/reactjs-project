@@ -1002,3 +1002,96 @@ li {
 
   }
 }
+
+/*-----------------------------------------Grocery----------------------------------------------*/
+.grocery-body{
+  padding: 80px 5vw 5vw;
+  .section-center{
+    max-width: 500px;
+    margin: 8vw auto;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 20px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+      font-size: 30px;
+      color: #063251;
+      margin-bottom: 24px;
+    }
+    .alert{
+      width: 100%;
+      text-align: center;
+      padding: 5px 10px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .alert-danger{
+      background-color: rgb(244, 194, 194);
+      color: rgb(241, 67, 67);
+    }
+    .alert-success{
+      background-color: rgb(193, 240, 191);
+      color: rgb(28, 96, 24);
+    }
+    .form-submit{
+      width: 100%;
+      input{
+        width: 75%;
+        height: 34px;
+        border: none;
+        background-color: #f1f5f8;
+        padding: 8px 14px;
+        border-radius: 4px 0 0 4px;
+      }
+      button{
+        width: 25%;
+        border: none;
+        background-color: #a5d5f8;
+        height: 34px;
+        border-radius: 0 4px 4px 0;
+      }
+    }
+    .list-container{
+      width: 100%;
+      .list-item{
+        
+        .list-info{
+          display: flex;
+          justify-content: space-between;
+          margin: 20px 0;
+          align-items: center;
+          li{
+            font-size: 20px;
+            margin-right: 20px;
+          }
+          .btn-container{
+            button{
+              background-color: transparent;
+              border: none;
+              font-size: 14px;
+              padding: 10px;
+              .fa-pen-to-square{
+                color: #6be675;
+              }
+              .fa-trash-can{
+                color: #e66b6b;
+              }
+            }
+          }
+        }
+      }
+      .clear{
+        display: block;
+        margin: 0 auto;
+        padding: 8px 14px;
+        color: #e66b6b;
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+      }
+    }
+  }
+}

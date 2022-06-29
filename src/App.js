@@ -7,6 +7,7 @@ import Question from "./question/App";
 import Menu from "./menu/App";
 import Tabs from "./tabs/App";
 import Lorem from "./lorem/App";
+import CRUD from "./crud/App";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/tabs" element={<Tabs />} />
         <Route path="/lorem" element={<Lorem />} />
+        <Route path="/crud" element={<CRUD />} />
       </Routes>
     </>
   );
