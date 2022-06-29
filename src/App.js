@@ -6,6 +6,7 @@ import Review from "./review/App";
 import Question from "./question/App";
 import Menu from "./menu/App";
 import Tabs from "./tabs/App";
+import Lorem from "./lorem/App";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/question" element={<Question />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/tabs" element={<Tabs />} />
+        <Route path="/lorem" element={<Lorem />} />
       </Routes>
     </>
   );

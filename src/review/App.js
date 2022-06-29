@@ -33,7 +33,10 @@ const App = () => {
         <h1>Our Reviews</h1>
         <div className="underline"></div>
         <article className="info-container">
-          <img src={image} alt={name} />
+          <div className="img-container">
+            <img src={image} alt={name} />
+            <i className="fa-solid fa-quote-right"></i>
+          </div>
           <h3>{name}</h3>
           <p className="job">{job}</p>
           <p className="text">{text}</p>
